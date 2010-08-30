@@ -1,0 +1,26 @@
+HTC_IME_Mod build script
+=============
+
+How to use
+-------------
+
+To get started, you'll need to obtain a copy of the htc_ime_mod source from 
+[forum.xda-developers.com](http://forum.xda-developers.com/ "xda") This script was built and tested against htc_ime_mod_dev26.zip
+
+Place this build.sh file in the root of the extracted zip and run it from the command line.
+
+Options
+-------------
+
+This script contains a set of parameters for use.
+
+./build.sh makefroyolo - Create a Voice support enabled low res IME for FroYo (This only needs to be run once.)
+./build.sh lo15 - Build the Low Res 1.5 IME
+./build.sh lo - Build the Low Res 1.6-2.1 IME
+./build.sh lo22 - Build the Low Res 2.2 IME
+./build.sh hi Build 1.6-2.1 IME
+./build.sh hi22 Build 2.2 High Res IME
+
+You can also add on the following options to the end of your command
+dist - Packages up the IME for distribution
+install - Install the IME via ADB for testing
