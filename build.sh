@@ -2,8 +2,17 @@
 #Build HTC_IME for all platforms
 #Ported from jonasl's batch scripts
 
+#make Lowres 2.2 ime
+if [ "`echo $1`" = "makefroyolo" ];
+then
+	mkdir lo22
+	cp -R lo/ lo22/
+	rm -rf lo22/com/htc/android/htcime/voice
+	mkdir lo22/com/htc/android/htcime/voice
+	cp -r hi22/com/htc/android/htcime/voice/ lo22/com/htc/android/htcime/voice/
+	echo "Created Low Res FroYo 2.2"	
 #htc_ime lo
-if [ "`echo $1`" = "lo" ];
+elif [ "`echo $1`" = "lo" ];
 then
 	rm classes.dex
 	rm HTC_IME_lo.apk
@@ -225,12 +234,13 @@ else
 	echo "HTC_IME Mod build script"
 	echo "Usage: build.sh <type> <options>"
 	echo "Available Types:"
-	echo "lo15	- Builds 1.5 Low-Res IME (No voice support)"
-	echo "lo 	- Builds 1.6-2.1 IME (Voice Support)"
-	echo "lo22	- Builds 2.2 IME (FroYo Voice Support)"
-	echo "hi	- Builds 1.6-2.1 High-Res IME (Voice Support)"
-	echo "hi22	- Builds 2.2 High-Res IME (FroYo Voice Support)"
+	echo "makefroyolo - Create Low Res FroYo IME"
+	echo "lo15	    - Builds 1.5 Low-Res IME (No voice support)"
+	echo "lo	    - Builds 1.6-2.1 IME (Voice Support)"
+	echo "lo22	    - Builds 2.2 IME (FroYo Voice Support)"
+	echo "hi	    - Builds 1.6-2.1 High-Res IME (Voice Support)"
+	echo "hi22	    - Builds 2.2 High-Res IME (FroYo Voice Support)"
 	echo "Available Options:"
-	echo "dist	- Creates ZIP Archive for distribution"
-	echo "install - Installs IME Via ADB"
+	echo "dist	    - Creates ZIP Archive for distribution"
+	echo "install	    - Installs IME Via ADB"
 fi
