@@ -1,4 +1,4 @@
-### HTC_IME_Mod build script
+`### HTC_IME_Mod build script
 
 #### How to use
 
@@ -19,5 +19,6 @@ This script contains a set of parameters for use.
 * build.sh hi22 Build 2.2 High Res IME
 
 You can also add on the following options to the end of your command
+
 * dist - Packages up the IME for distribution
-* install - Install the IME via ADB for testing
+* install - Install the IME via ADB for testing`
