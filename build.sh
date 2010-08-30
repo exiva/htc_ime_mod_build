@@ -177,7 +177,7 @@ then
 	#create dist archive
 	if [ "`echo $2`" = "dist" ];
 	then
-		zip htc_ime_jonasl_lo HTC_IME_hi.apk Clicker_hi.apk README.txt
+		zip htc_ime_jonasl_hi HTC_IME_hi.apk Clicker_hi.apk README.txt
 	#install via adb
 	elif [ "`echo $2`" = "install" ];
 	then
@@ -223,7 +223,7 @@ then
 	#create dist archive
 	if [ "`echo $2`" = "dist" ];
 	then
-		zip htc_ime_jonasl_lo HTC_IME_hi22.apk Clicker_hi.apk README.txt
+		zip htc_ime_jonasl_hi22 HTC_IME_hi22.apk Clicker_hi.apk README.txt
 	#install via adb
 	elif [ "`echo $2`" = "install" ];
 	then
