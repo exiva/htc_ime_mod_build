@@ -1,4 +1,4 @@
-`### HTC_IME_Mod build script
+### HTC_IME_Mod build script
 
 #### How to use
 
