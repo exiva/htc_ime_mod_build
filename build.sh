@@ -10,6 +10,7 @@ then
 	rm -rf lo22/com/htc/android/htcime/voice
 	mkdir lo22/com/htc/android/htcime/voice
 	cp -r hi22/com/htc/android/htcime/voice/ lo22/com/htc/android/htcime/voice/
+	cp HTC_IME_lo_unsigned.apk HTC_IME_lo22_unsigned.apk
 	echo "Created Low Res FroYo 2.2"	
 #htc_ime lo
 elif [ "`echo $1`" = "lo" ];
